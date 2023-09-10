@@ -8,14 +8,14 @@ body {
 header {
     background-color: #143429;
     color: #F0EDE8;
-    padding: 10px 0;
+    padding: 1; /* Reduzindo o padding do header */
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -45,9 +45,20 @@ nav {
     display: none;
 }
 
+.profile-icon {
+    position: relative;
+    cursor: pointer;
+}
+
 .profile-icon img {
-    width: 60px; /* Igual ao tamanho da logo */
+    width: 60px;
     height: auto;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover para o ícone de perfil */
+.profile-icon:hover img {
+    
 }
 
 .footer-content {
@@ -67,12 +78,4 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-.copyright {
-    background-color: #143429;
-    text-align: center;
-    color: #F0EDE8;
-    padding: 10px 0;
-    font-size: 14px;
 }
